@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+	{%block content%}
+
+		<form method = "POST" action = "">
+			<br/>
+			<br/>
+			<fieldset class = "form-group">
+				{{ form.hidden_tag() }}
+				<div class = "form-group">
+					{{ form.SearchQuery.label(class = "form-control-label") }}
+					{{ form.SearchQuery(class = "form-control form-control-lg") }}
+				</div>
+
+				<div class = "form-group">
+					{{ form.submit(class = "btn btn-outline-info") }}
+				</div>
+				
+			</fieldset>
+		</form>
+	{% endblock content%}

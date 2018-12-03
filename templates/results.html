@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1 style = "font-family:Tahoma; font-size:40px; color:blue">Predicted Category Id :{{ outputCategory }}</h1>
+	<h1 style = "font-family:Tahoma; font-size:40px; color:blue">Predicted Category Name: {{ outputCategoryName }}</h1>
+	{{ dataframe | safe }}
+{% endblock content %}
+
